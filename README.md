@@ -51,8 +51,8 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             "external_ref": null,
             "code": 0,
             "payload": {
-                "client_id": "98765432",
-                "bank_code": "10",
+                "client_id": "98765432", -> id клиетна в системе Хумо
+                "bank_code": "10", -> код банка эмитета
                 "second_name": "TEST",
                 "first_name": "TEST",
                 "birthday": "1992-09-12T00:00:00",
@@ -71,9 +71,16 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             "message": "Success",
             "status": null
         }
+| Название | Тип | Описание |
+|---|---|---|
+| client_id  |  string |  идентификатор для запросов. В основном используется для транзакционных операций |
+| bank_code  | int  |  Код ответа. Включает в себя код ошибки |
+| payload  | struct |  Тело ответа, хранящая в себе информацию. Для каждого запроса, структуры(объекты) разные |
+| message  | string | Описание кода(code) ответа в виде строки. |
+| status | string | Используется для описания статуса транзакции. |
 
     2. Метод Check Sms banking [GET]:        
-        Проверка на подключения смс информирования банком. Операции по платежам не могут проводится если клиент не подключен к смс информированию. Если смс информирование подключено, в теле ответа(payload) будет информация о номере телефона привязанной к карте. 
+        Проверка на подключения смс информирования банком. Операции по платежам не могут проводится если клиент не подключен к смс информированию.
 
         GET запрос по номеру карты
         Ответ:
@@ -97,11 +104,11 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         "external_ref": null,
         "code": 900,
         "payload": {
-            "card_number": "986010*****7451",
-            "card_holder_name": "A ABDURASHIDOV",
+            "card_number": "987654*****1234",
+            "card_holder_name": "TEST TEST",
             "currency": "UZS",
             "currency_desc": "UZS",
-            "available_amount": 8888888 -> возвращается в копейках
+            "available_amount": 8888888
         },
         "message": "Accepted for further process",
         "status": null
@@ -114,7 +121,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         "card_number": "string", -> номер карты
         "begin_date": "2021-02-08T08:30:46.377Z", -> с какой даты
         "end_date": "2021-02-08T08:30:46.377Z", -> по какую
-        "include_declined": true -> включить ли отмененные тразакции
+        "include_declined": true -> включить ли отмененные(Отменены по причине нехватки денег или же других причин) тразакции
         }
         Ответ:
         {
@@ -163,7 +170,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
                 "amount": 1000,
                 "currency": 860, -> (Currency code: UZS, etc)
                 "conversion_rate": 1,
-                "state": "Refunded",
+                "state": 3,
                 "state_desc": "returned",
                 "refunded_amount": 100000
             },
@@ -185,7 +192,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
                 "amount": 1000,
                 "currency": 860,
                 "conversion_rate": 1,
-                "state": "Refunded",
+                "state": 3,
                 "state_desc": "returned",
                 "refunded_amount": 100000
                 },
@@ -385,7 +392,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         TransactionConfirmed = 5
 
     -----------------------------------------
-    Типа транзакций:
+    Типы транзакций:
         [Description("Снятие с карты")]
         Debit = 0, 
 
