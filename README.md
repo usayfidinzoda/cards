@@ -233,11 +233,11 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
 
         POST запрос:
         {
-            "external_ref": "1612357300058500100",
-            "sender": {
-                "pan": "9876543211234567",
-                "yymm": "2301",
-                "phone": "+998111111111"
+            "external_ref": "1612357300058500100", -> уникальный номер
+            "sender": { -> структура отправки, при котором sender считается как клиент.
+                "pan": "9876543211234567", -> номер карты
+                "yymm": "2301", -> срок истечения карты клиента
+                "phone": "+998111111111" -> номер клиента
             },
             "service_name": "testExternalServiceName",
             "country": "testCountryName"
@@ -248,8 +248,8 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
                 "external_ref": "1612357300058500100",
                 "code": 900,
                 "payload": {
-                    "token": "987654****4567",
-                    "masked_pan": "add19f8779730110bd3d92c781fcebc0c25e42c41661bd0b59174140"
+                    "token": "add19f8779730110bd3d92c781fcebc0c25e42c41661bd0b59174140",
+                    "masked_pan":"987654****4567"
                 },
                 "message": "Accepted for further process",
                 "status": null
@@ -332,13 +332,13 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             "code": 0,
             "payload": {
                 "external_ref": "string",
-                "state": "New",
+                "state": 0,
                 "state_desc": "string",
                 "amount": 0,
                 "error_message": "string",
                 "error_code": "Success",
-                "type": 0, тип тран
-                "typ_desc": "string",
+                "type": 0, тип транзакции
+                "typ_desc": "string", описание к транзакции
                 "service_name": "string"
             },
             "message": "string",
@@ -362,3 +362,108 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             "message": "Accepted for further process",
             "status": "Refunded"
         }
+
+### Общие коды
+    Статусы платяжа: 
+
+        [Description("Платеж создан / В очереде на прохождение")]
+        New = 0,
+        
+        [Description("Ошибка")]
+        Error = 1,
+
+        [Description("Операциия отменена")]
+        Calceled = 2,
+        
+        [Description("Возврат средств")]
+        Refunded = 3,
+        
+        [Description("Транзакция ожидает подтверждения клиента")]
+        TransactionVerified = 4,
+        
+        [Description("Транзакция завершена")]
+        TransactionConfirmed = 5
+
+    -----------------------------------------
+    Типа транзакций:
+        [Description("Снятие с карты")]
+        Debit = 0, 
+
+        [Description("Перевод с карты на карту")]
+        P2P = 1,
+
+        [Description("Пополнение карты")]
+        Credit = 2
+
+    --------------------------------------------
+
+    Коды ошибок:
+
+        [Description("Accepted for further process")]
+        Accepted = 900,
+        
+        [Description("Approved with partial amount")]
+        ApprovedWithPartialAmount = 901,
+        
+        [Description("Accepted, need confirmation code")]
+        NeedForConfirmationCode = 902,
+
+        [Description("Invalid confirmation code")]
+        InvalidConfirmationCode = 903,
+
+        [Description("Bad request")]
+        BadRequest = 910,  
+        
+        [Description("Bad gateway")]
+        BadGateway = 911,
+        
+        [Description("Upstream service unavailable")]
+        ServiceUnavailable = 912,
+        
+        [Description("Limit exceeded")]
+        LimitExceeded = 913,
+        
+        [Description("Invalid card (expired or not found)")]
+        InvalidCard = 914, 
+        
+        [Description("Insufficient funds")]
+        InsufficientFunds = 915,
+        
+        [Description("Invalid amount")]
+        InvalidAmount = 916,
+        
+        [Description("Invalid transaction")]
+        InvalidTransaction = 917,
+        
+        [Description("Can not finalize transaction")]
+        CanNotFinalizeTransaction = 918,
+        
+        [Description("Not found")]
+        NotFound = 919,
+        
+        [Description("Sender card/account blocked or temporarily unavailable")]
+        SenderCardBlockedOrUnavailable = 920,
+        
+        [Description("Receiver card/account blocked or temporarily unavailable")]
+        ReceiverCardBlockedOrUnavaulable = 921,
+        
+        [Description("Unauthorized client")]
+        UnAuthorized = 922,
+        
+        [Description("Forbidden transaction")]
+        ForbiddenTransaction = 923,
+        
+        [Description("Internal server error")]
+        InternalError = 924,
+        
+        [Description("Gateway timeout")]
+        GatewayTimeout = 925,
+        
+        [Description("Duplicate transaction")]
+        DublicateTransaction = 926,
+        
+        [Description("Transaction declined by host")]
+        TransactionDeclinedByHost = 927,
+
+        [Description("Apporoved")]
+        Approved = 1000
