@@ -282,8 +282,8 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
                 "external_ref": "1612357300058500100",
                 "code": 900,
                 "payload": {
-                    "token": "987654****4567",
-                    "masked_pan": "add19f8779730110bd3d92c781fcebc0c25e42c41661bd0b59174140"
+                    "token": "add19f8779730110bd3d92c781fcebc0c25e42c41661bd0b59174140",
+                    "masked_pan":"987654****4567"
                 },
                 "message": "Accepted for further process",
                 "status": null
