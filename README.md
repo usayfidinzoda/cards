@@ -264,7 +264,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
 
             2. Иначе, приходит ответ: 
             {
-                "external_ref": "test",
+                "external_ref": "1612357300058500100",
                 "code": 902,
                 "payload": null,
                 "message": "Accepted, need confirmation code",
@@ -313,7 +313,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         Снятие с карты по предоставленному токену. 
         POST запрос для снятия:
         {
-            "external_ref": "testexternalref",
+            "external_ref": "1612357300058500100",
             "sender": {
                 "token": "tokenforsomecard"
             "amount": 9999, -> указывается в UZS, Например: 1234.50 
@@ -321,7 +321,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         }
         Ответ:
         {
-        "external_ref": "testexternalref",
+        "external_ref": "1612357300058500100",
         "code": 1000,
         "payload": {
             "state": "5",
@@ -335,7 +335,6 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         GET запрос с external_ref
         Ответ:
         {
-            "external_ref": "string",
             "code": 0,
             "payload": {
                 "external_ref": "string",
@@ -355,12 +354,12 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         Используется для возврата денег на карту. 
         POST запрос:
         {
-            "external_ref" : "string",
+            "external_ref" : "1612357300058500100",
             "service_name" : "testServiceName"
         } 
         Ответ: 
         {
-            "external_ref": "string",
+            "external_ref": "1612357300058500100",
             "code": 900,
             "payload": {
                 "state": 3,
