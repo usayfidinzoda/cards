@@ -335,14 +335,14 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
                 "token": "tokenforsomecard",    
                 "phone": "string"
             },
-            "amount": 9999, -> указывается в UZS, Например: 1234.50 : mandatory 
-            "service_name": "string", -> сервис отправитель (consumer name): пример alif.mobi, alif.shopuz и тд. : mandatory 
-            "country": "string" -> Страна(UZ, RU, TJ) : mandatory
-            "instant": true, -> true указывает на синхронность платяжа, false -> за ассинхроность (not implemented) : optional 
+            "amount": 9999,                          -> указывается в UZS, Например: 1234.50 : mandatory 
+            "service_name": "string",                -> сервис отправитель (consumer name): пример alif.mobi, alif.shopuz и тд. : mandatory 
+            "country": "string"                      -> Страна(UZ, RU, TJ) : mandatory
+            "instant": true,                         -> true указывает на синхронность платяжа, false -> за ассинхроность (not implemented) : optional 
             "life_time": "2021-02-23T06:22:05.215Z", -> timeout платяжа (under construction, not implemented) : optional
-            "description": "string", : optional
-            "otp": "string", ->  otp код, не используется для данного метода
-            "fee": 0, -> если взымается коммисия с клиента за оплату, указывается коммисия в UZS : optional
+            "description": "string",                 -> описание к оплате : optional
+            "otp": "string",                         -> otp код, не используется для данного метода
+            "fee": 0,                                -> если взымается коммисия с клиента за оплату, указывается коммисия в UZS : optional
         }
         Ответ:
         {
@@ -360,17 +360,17 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
         GET запрос с external_ref
         Ответ:
         {
-            "code": 0,
-            "payload": {
-                "external_ref": "string",
-                "state": 0,
-                "state_desc": "string",
-                "amount": 0,
-                "error_message": "string",
-                "error_code": "Success",
-                "type": 0, тип транзакции
-                "typ_desc": "string", описание к транзакции
-                "service_name": "string"
+            "code": 0,                      
+            "payload": {            
+                "external_ref": "string",   :       уникальный номер транзакции от пользователя услуг
+                "state": 0,                 :       код статуса (таблицу общих кодов можно посмотреть внизу)
+                "state_desc": "string",     :       описание к статусу
+                "amount": 0,                :       сумма транзакции
+                "error_code": 0,            :       код ошибки (таблицу общих кодов можно посмотреть внизу)    
+                "error_message": "Success", :       описание к ошибке
+                "type": 0,                  :       тип транзакции (таблицу общих кодов можно посмотреть внизу)
+                "typ_desc": "string",       :       описание к транзакции
+                "service_name": "string"    :       имя сервиса
             },
             "message": "string",
             "status": "string"
