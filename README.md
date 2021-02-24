@@ -248,6 +248,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             },
             "service_name": "testExternalServiceName",
             "country": "testCountryName"
+            "lang" : "string"                           -> язык сообщения для оповещения (uz, en, ru).
         }
         Ответ может быть в двух видах. 
             1. Если номер телефона привязанной карты равен номеру телефону в запросе, в этом случае токенизация происходит моментально и возвращает желанный токен 
@@ -343,6 +344,7 @@ Docs of Humo UZ API - uz.alif.mobi/humo/swagger
             "description": "string",                 -> описание к оплате : optional
             "otp": "string",                         -> otp код, не используется для данного метода
             "fee": 0,                                -> если взымается коммисия с клиента за оплату, указывается коммисия в UZS : optional
+            "lang" : "string"                        -> язык сообщения для оповещения (uz, en, ru).
         }
         Ответ:
         {
