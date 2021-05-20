@@ -66,6 +66,25 @@ Confirm Request
 
 ```
 
+Снятия по токену
+
+Debit By Token Request
+
+```
+{
+    "service_name":"alif.moliya",
+    "external_ref":"131",
+    "sender":{
+        "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
+    },
+    "amount":1000.50,
+    "description":"test",
+    "country":"uz",
+}
+
+```
+
+
 Success Response
 
 ```
