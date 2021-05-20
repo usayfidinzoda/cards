@@ -30,7 +30,7 @@ Success Response
 
 ```
 {
-    "external_ref": "128",
+    "external_ref": "131",
     "code": 1000,
     "message": "успешно",
     "status": "approved"
@@ -45,7 +45,7 @@ Pending Response
 ```
 
 {
-    "external_ref": "130444",
+    "external_ref": "131",
     "code": 902,
     "message": "Принято, нужен код подтверждения",
     "payload": {
