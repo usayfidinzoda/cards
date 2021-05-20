@@ -94,5 +94,3 @@ Failed Response
 
 ```
 
-Response
-
