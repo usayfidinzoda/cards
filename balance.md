@@ -47,7 +47,6 @@ Failed Response
     "external_ref": "128",
     "code": 914,
     "message": "Недействительная карта",
-    "payload": null,
     "status": "failed"
 }
 
@@ -100,7 +99,6 @@ Failed Response
     "external_ref": "128",
     "code": 914,
     "message": "Недействительная карта",
-    "payload": null,
     "status": "failed"
 }
 
