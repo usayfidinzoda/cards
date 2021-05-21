@@ -104,7 +104,6 @@ Failed Response
     "external_ref": "131",
     "code": 926,
     "message": "Повторяющаяся транзакция,
-    "payload": null,
     "status": "failed"
 }
 
