@@ -91,7 +91,6 @@ Failed Response
     "external_ref": "130444",
     "code": 919,
     "message": "Not found",
-    "payload": null,
     "status": "failed"
 }
 
