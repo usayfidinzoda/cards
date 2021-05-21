@@ -38,7 +38,7 @@ Failed Response
 {
     "external_ref": "128",
     "code": 924,
-    "payload": null,
+    "message": "Внутренняя ошибка сервера",
     "status": "failed"
 }
 
