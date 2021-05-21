@@ -1,4 +1,5 @@
 Запрос Запрос на отмену транзакции
+
 {api_address}/debit/reverse
 
 Method: POST
