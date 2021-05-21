@@ -7,6 +7,7 @@ Method: POST
 P2P pan2pan Перевод денег по пану и сроку действия карты отправителя и получателя
  
 Request: 
+
 ```
 {
     "service_name":"alif.moliya",
@@ -16,8 +17,7 @@ Request:
         "yymm":"2312"
     },
     "receiver":{
-        "pan":"8600111111111121",
-        "yymm":"2312"
+        "pan":"8600111111111121"
     },
     "amount":1000.50,
     "description":"test",
@@ -27,8 +27,8 @@ Request:
 
 ```
 
-```
-В противном случае, отправлятся сообщение с OTP на номер к привязанной карте в банке. 
+отправлятся сообщение с OTP на номер к привязанной карте в банке. 
+
 
 ```
 
@@ -56,12 +56,10 @@ Confirm Request
     "external_ref":"131",
     "sender":{
         "pan":"8600111111111111",
-        "yymm":"2312",
-        "phone":"998900111111",
+        "yymm":"2312"
     },
     "receiver":{
         "pan":"8600111111111121",
-        "yymm":"2312"
     },
     "otp":"123456",
     "amount":1000.50,
@@ -84,8 +82,7 @@ Credit by sender token request
         "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e",
     },
     "receiver":{
-        "pan":"8600111111111121",
-        "yymm":"2312"
+        "pan":"8600111111111121"
     },
     "amount":1000.50,
     "description":"test",
