@@ -1,4 +1,5 @@
 Запрос на получении скоринга карты
+
 {api_address}/card/history
 
 Method: POST
