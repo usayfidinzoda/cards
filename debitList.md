@@ -9,8 +9,6 @@ Request
 ```
 {
   "service_name": "alif.moliya",
-  "external_ref": "",
-  "id": 0,
   "date_from":"2020-01-02T15:04:05Z",
   "date_to":"2022-01-02T15:04:05Z",
   "rows_limit": 20,
