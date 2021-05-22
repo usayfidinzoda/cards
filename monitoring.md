@@ -29,7 +29,7 @@ Success Response
         "total_elements": 0,
         "page_size": 3,
         "page_number": 0,
-        "Content": [
+        "content": [
             {
                 "amount": 0,
                 "merchant_name": "",
