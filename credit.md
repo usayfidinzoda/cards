@@ -11,9 +11,8 @@ Request: пополнение карты по пану и сроку дейст�
 {
     "service_name":"alif.moliya",
     "external_ref":"131",
-    "sender":{
+    "receiver":{
         "pan":"8600111111111111",
-        "yymm":"2312"
     },
     "amount":1000.50,
     "description":"test",
@@ -31,7 +30,7 @@ Credit By Token Request
 {
     "service_name":"alif.moliya",
     "external_ref":"131",
-    "sender":{
+    "receiver":{
         "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
     },
     "amount":1000.50,
