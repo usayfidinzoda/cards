@@ -7,6 +7,7 @@ Method: POST
 
 Request
 
+external_ref - нужно указывать такой же, как при токенизации
 ```
 
 {
