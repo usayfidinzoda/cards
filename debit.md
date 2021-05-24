@@ -18,7 +18,7 @@ Request: списание с карты по пану и сроку действ
     "amount":1000.50,
     "description":"test",
     "country":"uz",
-    "lang":"ru",
+    "lang":"ru"
 }
 
 ```
@@ -61,7 +61,7 @@ Confirm Request
     "otp":"123456",
     "description":"test",
     "country":"uz",
-    "lang":"ru",
+    "lang":"ru"
 }
 
 ```
@@ -79,7 +79,7 @@ Debit By Token Request
     },
     "amount":1000.50,
     "description":"test",
-    "country":"uz",
+    "country":"uz"
 }
 
 ```
