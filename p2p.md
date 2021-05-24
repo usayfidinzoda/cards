@@ -65,7 +65,7 @@ Confirm Request
     "amount":1000.50,
     "description":"test",
     "country":"uz",
-    "lang":"ru",
+    "lang":"ru"
 }
 
 ```
@@ -87,7 +87,7 @@ Credit by sender token request
     "amount":1000.50,
     "description":"test",
     "country":"uz",
-    "lang":"ru",
+    "lang":"ru"
 }
 
 ```
