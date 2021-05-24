@@ -12,7 +12,7 @@ Request: пополнение карты по пану и сроку дейст�
     "service_name":"alif.moliya",
     "external_ref":"131",
     "receiver":{
-        "pan":"8600111111111111",
+        "pan":"8600111111111111"
     },
     "amount":1000.50,
     "description":"test",
