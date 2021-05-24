@@ -15,7 +15,7 @@ Request
     "sender":{
         "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
     },
-    "description":"reason: card is expired, user: Joh Doe" 
+    "description":"reason: card is expired, user: Joh Doe", 
     "country":"uz"
 }
 
