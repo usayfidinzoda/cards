@@ -22,7 +22,7 @@ Request:
     "amount":1000.50,
     "description":"test",
     "country":"uz",
-    "lang":"ru",
+    "lang":"ru"
 }
 
 ```
