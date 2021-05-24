@@ -5,6 +5,9 @@
 Method: POST
 
 Request
+
+rows_limit - max limit 50
+
 ```
 {
 
