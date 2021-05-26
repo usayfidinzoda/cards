@@ -35,7 +35,7 @@ Credit By Token Request
     },
     "amount":1000.50,
     "description":"test",
-    "country":"uz",
+    "country":"uz"
 }
 
 ```
