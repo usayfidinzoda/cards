@@ -19,6 +19,8 @@ Request:
     "receiver":{
         "pan":"8600111111111121"
     },
+    "terminal": "p2p_0",
+    "fee": 0.00,
     "amount":1000.50,
     "description":"test",
     "country":"uz",
