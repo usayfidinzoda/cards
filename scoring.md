@@ -32,7 +32,7 @@ Success Response
         "phone": "998900111111",
         "card_number": "860057******1862",
         "bank_name": "Orient Finans Bank",
-        "begin_date": "20210501",
+        "begin_date": "20210101",
         "end_date": "20210430",
         "history": [
             {
