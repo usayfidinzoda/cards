@@ -1,6 +1,6 @@
 Запрос Запрос на отмену транзакции
 
-{api_address}/debit/reverse
+{api_address}/transaction/reverse
 
 Method: POST
 
@@ -12,7 +12,8 @@ Request
 {
     "service_name":"alif.moliya",
     "external_ref":"130444",
-    "description":"reverse reason"
+    "description":"reverse reason",
+    "tran_type":"debit"        //transaction type: debit, credit, p2p
 }
 
 ```
