@@ -9,7 +9,7 @@ Request
 
 {
     "service_name":"alif.moliya",
-    "external_ref":"130444"
+    "external_ref":"130444",
     "tran_type":"debit"        //transaction type: debit, credit, p2p
 }
 
