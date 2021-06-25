@@ -1,5 +1,7 @@
 # Balance
 
+nats subject: uzcard.card.balance
+
 1. Получите баланс по пану и сроку действия
 
 {api_address}/card/balance
