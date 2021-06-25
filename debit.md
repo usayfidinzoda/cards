@@ -10,7 +10,7 @@ Request: списание с карты по пану и сроку действ
 
 {
     "service_name":"alif.moliya",
-    "external_ref":"131",
+    "external_ref":"131234er12",
     "sender":{
         "pan":"8600111111111111",
         "yymm":"2312"
@@ -18,7 +18,9 @@ Request: списание с карты по пану и сроку действ
     "amount":1000.50,
     "description":"test",
     "country":"uz",
-    "lang":"ru"
+    "lang":"ru",
+    "terminal":"debit",
+    "order_id":"2344242"
 }
 
 ```
@@ -61,7 +63,9 @@ Confirm Request
     "otp":"123456",
     "description":"test",
     "country":"uz",
-    "lang":"ru"
+    "lang":"ru",
+    "terminal":"debit",
+    "order_id":"2344242"
 }
 
 ```
@@ -79,7 +83,10 @@ Debit By Token Request
     },
     "amount":1000.50,
     "description":"test",
-    "country":"uz"
+    "country":"uz",
+    "lang":"ru",
+    "terminal":"debit",
+    "order_id":"2344242"
 }
 
 ```
