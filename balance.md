@@ -1,6 +1,6 @@
 # Balance
 
-nats subject: uzcard.card.balance
+nats subject: {service}.card.balance
 
 1. Получите баланс по пану и сроку действия
 
