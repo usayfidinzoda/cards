@@ -1,3 +1,5 @@
+nats streaming subject : uzcard.transaction
+
 Запрос на проверку статуса транзакции
 {api_address}/transaction/check
 
