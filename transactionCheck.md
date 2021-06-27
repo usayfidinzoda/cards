@@ -1,4 +1,4 @@
-nats streaming subject : {service}.transaction
+nats streaming subject : {service}.transaction.check
 
 Запрос на проверку статуса транзакции
 {api_address}/transaction/check
