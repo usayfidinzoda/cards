@@ -2,7 +2,7 @@
 
 rest {api_address}/card/info
 
-nats {service}.card.info
+nats subject {service}.card.info
 
 Method: POST
 
