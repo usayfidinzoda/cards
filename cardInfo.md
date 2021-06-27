@@ -1,6 +1,7 @@
 1. Реквизиты карты по токену
 
 rest {api_address}/card/info
+
 nats {service}.card.info
 
 Method: POST
