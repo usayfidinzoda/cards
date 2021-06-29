@@ -2,6 +2,8 @@
 
 {api_address}/p2p/create
 
+nats subject {service}.p2p
+
 Method: POST
 
 P2P pan2pan Перевод денег по пану и сроку действия карты отправителя и пану получателя
