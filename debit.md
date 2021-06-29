@@ -2,6 +2,8 @@
 
 {api_address}/debit/create
 
+nats subject {service}.debit
+
 Method: POST
 
 Request: списание с карты по пану и сроку действия
