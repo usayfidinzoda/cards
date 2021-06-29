@@ -3,6 +3,8 @@
 
 {api_address}/token/delete
 
+nats subject: {service}.token.delete
+
 Method: POST
 
 Request
