@@ -2,7 +2,7 @@
 
 {api_address}/debit/create
 
-nats subject {service}.debit
+nats subject:  {service}.debit
 
 Method: POST
 
