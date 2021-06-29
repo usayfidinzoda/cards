@@ -1,7 +1,7 @@
-nats streaming subject : {service}.transaction.check
-
 Запрос на проверку статуса транзакции
 {api_address}/transaction/check
+
+nats subject : {service}.transaction
 
 Method: POST
 
