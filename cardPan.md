@@ -1,6 +1,6 @@
 1. Получение панa, срока действия карты по токену
 
-nats subject {service}.card.pan
+nats subject: {service}.card.pan
 
 Method: POST
 
