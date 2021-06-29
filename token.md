@@ -2,6 +2,8 @@
 
 {api_address}/token/create
 
+nats subject: {service}.token
+
 Method: POST
 
 Request
