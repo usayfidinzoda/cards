@@ -11,7 +11,7 @@ Request
   "service_name": "alif.moliya",
   "date_from":"2020-01-02T15:04:05Z",
   "date_to":"2022-01-02T15:04:05Z",
-  "rows_limit": 20,
+  "rows_limit": 10,
   "rows_offset": 0,
   "status": ""
 }
@@ -28,6 +28,7 @@ Success Response
 	"message": "Успешно",
 	"payload": {
 		"count": 27,
+		"total": "145000.25",
 		"result": [{
 			"id": 29,
 			"external_ref": "23",
