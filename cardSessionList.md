@@ -40,7 +40,7 @@ Failed Response
 
 ```
 {
-    "external_ref": "12",
+    "external_ref": "18",
     "code": 910,
     "message": "Неверные данные запроса",
     "status": "failed"
