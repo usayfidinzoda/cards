@@ -1,6 +1,6 @@
 Метод позволяет блокировать карту
 
-nats subject: uzcard.card.session.list
+nats subject: uzcard.card.block
 
 Method: POST
 
