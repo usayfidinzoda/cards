@@ -1,6 +1,6 @@
 Запрос на проверку статуса транзакции
 
-{api_address}/transaction/check
+{api_address}/debit/check
 
 nats subject : {service}.transaction
 
