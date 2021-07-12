@@ -31,14 +31,12 @@ Success Response
             {
                 "pan": "8600111111111111",
                 "yymm": "2312",
-                "full_name": "Cardholder Full Name",
-                "status": 1000
+                "full_name": "Cardholder Full Name"
             },
             {
                 "pan": "8600111111111121",
                 "yymm": "2311",
-                "full_name": "Cardholder Full Name,
-                "status": 1000
+                "full_name": "Cardholder Full Name
             }
         ]
     },
