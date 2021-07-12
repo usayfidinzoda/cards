@@ -26,21 +26,18 @@ Success Response
 {
 	"code": 1000,
 	"message": "Успешно",
-	"payload": {
-		"count": 27,
-		"total": "145000.25",
-		"result": [{
+	"payload": [{
 			"id": 29,
 			"external_ref": "23",
 			"pan": "860011******1111",
 			"amount": "1000.00",
-			"regdate": "2021-04-30T18:37:33.199535+05:00",
 			"stsdate": "2021-04-30T18:37:44.142549+05:00",
 			"status": "failed",
 			"err_code": 926,
-			"err": "Transaction with such ext=29 (refNum=13) already exist in the database!"
-		}]
-	},
+			"err": "Transaction with such ext=29 (refNum=13) already exist in the database!",
+			"order_id": "",
+                        "description": "Погашение рассрочки"
+		}],
 	"status": "approved",
 	"external_ref": ""
 }
