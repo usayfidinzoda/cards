@@ -32,6 +32,7 @@ Success Response
         "bank_name": "Agrobank",
         "account_number": "11111111111111111111",
         "card_type": "private",
+        "phone": "998900111111",
         "inn": "",
         "bik": ""
     },
