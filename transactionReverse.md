@@ -1,6 +1,8 @@
 Запрос Запрос на отмену транзакции
 
-{api_address}/transaction/reverse
+rest {api_address}/transaction/reverse
+
+nats subject: {service}.transaction.reverse
 
 Method: POST
 
