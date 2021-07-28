@@ -37,7 +37,9 @@ Success Response
     "payload": {
         "token": "f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e",
         "bank_name": "Agrobank",
-        "pan": "8600*****1111"
+        "pan": "8600*****1111",
+        "full_name": "SOME NAME",
+        "pan_hash": ""
     },
     "status": "approved"
 }
