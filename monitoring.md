@@ -1,57 +1,75 @@
 Запрос на мониторинг карты
 
-{api_address}/card/monitoring
+rest {api_address}/monitoring
 
 Method: POST
 
 Request
 
-rows_limit - max limit 50
-
 ```
 {
-
-    "service_name": "servicename",
-    "external_ref":"ext 1",
-    "rows_limit":20,
-    "rows_offset":0,
-    "date_from":"2021-04-30T15:04:05+05:00",
-    "date_to":"2021-05-02T15:04:05+05:00",
-    "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
-    
+    "service_name":"alif.moliya",
+    "external_ref":"12",
+    "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e",
+    "date_from":"2021-02-15T00:00:00Z",
+    "date_to":"2022-08-20T00:00:00Z",
+    "txn_type":"debit"
 }
 ```
 
 Success Response
 
 ```
-
-{
-    "external_ref": "",
+"external_ref": "",
     "code": 1000,
     "message": "Успешно",
-    "payload":  [{
-                "amount": 100050.50,
-                "merchant_name": "Bozori Korvon, 23",
-                "pan": "8934******1234",
-                "date": "2021-01-01T10:40:30Z",
-                "type": "debit",
-                "merchant_category": "Supermarket",
-                "reversal": false
-            }],
+    "payload": [
+        {
+            "tran_num": "17",
+            "tran_type": "debit",
+            "date": "2021-07-19T14:29:01.452128Z",
+            "amount": 200,
+            "merchant": "somename",
+            "city": "somename",
+            "street": "somename",
+            "mcc": "122"
+        },
+        {
+            "tran_num": "2",
+            "tran_type": "debit",
+            "date": "2021-07-19T14:29:01.452128Z",
+            "amount": 200,
+            "merchant": "somename",
+            "city": "somename",
+            "street": "somename",
+            "mcc": "122"
+        },
+        {
+            "tran_num": "4",
+            "tran_type": "debit",
+            "date": "2021-07-19T14:29:01.452128Z",
+            "amount": 200,
+            "merchant": "somename",
+            "city": "somename",
+            "street": "somename",
+            "mcc": "122"
+        }
+    ],
     "status": "approved"
 }
 
 ```
 
-Failed Response 
+Failed Response
 
 ```
 {
-    "external_ref": "",
-    "code": 914,
-    "message": "Недействительная карта",
-    "payload": null,
+    "external_ref": "12",
+    "code": 910,
+    "message": "Неверные данные запроса",
     "status": "failed"
 }
+
 ```
+
+
