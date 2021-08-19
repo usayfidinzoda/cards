@@ -1,6 +1,6 @@
-Запрос на мониторинг карты
+Запрос на получение транзакций за последние три месяца
 
-rest {api_address}/monitoring
+rest {api_address}/card/monitoring
 
 Method: POST
 
