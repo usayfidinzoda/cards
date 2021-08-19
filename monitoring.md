@@ -10,9 +10,9 @@ Request
 {
     "service_name":"alif.moliya",
     "external_ref":"12",
-    "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e",
-    "date_from":"2021-02-15T00:00:00Z",
-    "date_to":"2022-08-20T00:00:00Z",
+    "sender":{
+    "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
+    },
     "txn_type":"DEBIT"
 }
 ```
@@ -20,7 +20,7 @@ Request
 Success Response
 
 ```
-"external_ref": "",
+"external_ref": "12",
     "code": 1000,
     "message": "Успешно",
     "payload": [
