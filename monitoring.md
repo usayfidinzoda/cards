@@ -13,7 +13,7 @@ Request
     "sender":{
     "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
     },
-    "txn_type":"DEBIT"
+    "txn_type":"debit"
 }
 ```
 
@@ -26,7 +26,7 @@ Success Response
     "payload": [
         {
             "tran_num": "17",
-            "tran_type": "DEBIT",
+            "tran_type": "debit",
             "date": "2021-07-19T14:29:01.452128Z",
             "amount": 200,
             "merchant": "somename",
@@ -36,7 +36,7 @@ Success Response
         },
         {
             "tran_num": "2",
-            "tran_type": "DEBIT",
+            "tran_type": "debit",
             "date": "2021-07-19T14:29:01.452128Z",
             "amount": 200,
             "merchant": "somename",
@@ -46,7 +46,7 @@ Success Response
         },
         {
             "tran_num": "1",
-            "tran_type": "DEBIT",
+            "tran_type": "debit",
             "date": "2021-07-19T14:29:01.452128Z",
             "amount": 200,
             "merchant": "somename",
