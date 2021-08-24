@@ -39,7 +39,8 @@ Success Response
         "bank_name": "Agrobank",
         "pan": "8600*****1111",
         "full_name": "SOME NAME",
-        "pan_hash": "9bf9c57f7b0a0c1c98164b8307309d7f2380d890b508a73f8dcf821d9de31fd6"
+        "pan_hash": "9bf9c57f7b0a0c1c98164b8307309d7f2380d890b508a73f8dcf821d9de31fd6",
+        "phone":"998900111111"
     },
     "status": "approved"
 }
