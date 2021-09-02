@@ -101,6 +101,9 @@ Success Response
     "external_ref": "131",
     "code": 1000,
     "message": "успешно",
+    "payload": {
+        "id": 160
+    },
     "status": "approved"
 }
 
