@@ -1,7 +1,5 @@
  Метод P2P перевод денег с карты на карту
-
-{api_address}/p2p/create
-
+ 
 nats subject {service}.p2p
 
 Method: POST
