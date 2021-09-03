@@ -6,6 +6,16 @@ Method: POST
 
 Request
 
+
+Типы транизакций Debit:
+ "DEBIT"
+ "DEBIT_REVERSAL"
+ "CREDIT"
+ "CREDIT_REVERSAL"
+ "P2P_DEBIT"
+ "P2P_CREDIT"
+
+
 ```
 {
     "service_name":"alif.moliya",
