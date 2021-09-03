@@ -7,7 +7,7 @@ Method: POST
 Request
 
 
-Типы транизакций Debit:
+Типы транизакций: 
  "DEBIT"
  "DEBIT_REVERSAL"
  "CREDIT"
