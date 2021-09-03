@@ -13,7 +13,7 @@ Request
     "sender":{
     "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
     },
-    "txn_type":"DEBIT"
+    "txn_type":""
 }
 ```
 
