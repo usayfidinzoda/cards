@@ -5,6 +5,7 @@ pending  | в обработке
 approved | Успешно
 failed   | неудачный
 reversed | отмена платежа
+empty    | история транзакций пуста
 
 
 # Error Codes:
