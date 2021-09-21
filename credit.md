@@ -14,7 +14,7 @@ Request: пополнение карты по пану и сроку дейст�
     "receiver":{
         "pan":"8600111111111111"
     },
-    "terminal": "credit_0",
+    "terminal": "credit",
     "amount":1000.50,
     "description":"test",
     "country":"uz",
