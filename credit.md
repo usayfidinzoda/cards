@@ -14,6 +14,7 @@ Request: пополнение карты по пану и сроку дейст�
     "receiver":{
         "pan":"8600111111111111"
     },
+    "terminal": "credit_0",
     "amount":1000.50,
     "description":"test",
     "country":"uz",
@@ -33,6 +34,7 @@ Credit By Token Request
     "receiver":{
         "token":"f535e2a13abbf2bc2738afe93494fk43efa06a6a167bd84718fed39e"
     },
+    "terminal": "credit_0",
     "amount":1000.50,
     "description":"test",
     "country":"uz"
